@@ -17,7 +17,7 @@ class LightnewparsSpider(scrapy.Spider):
                 'url' : light.css('a').attrib['href']
             }
             parsed_data.append([light.css('div.h6 a::text').get(), (light.css('div.col-auto span::text').get().replace('\xa0'," ")).replace('\u2009', ''), light.css('a').attrib['href']])
-        with open("hh.csv", 'w', newline='', encoding='utf-8') as file:
+        with open("lightpars.csv", 'w', newline='', encoding='utf-8') as file:
             # Используем модуль csv и настраиваем запись данных в виде таблицы
             # Создаём объект
             writer = csv.writer(file)
