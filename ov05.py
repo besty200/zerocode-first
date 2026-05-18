@@ -7,10 +7,10 @@ pygame.init()
 window_size = (800, 600)
 screen = pygame.display.set_mode(window_size)
 pygame.display.set_caption("PyGame game")
-image1 = pygame.image.load("picPython.png")
+image1 = pygame.image.load("static/image/picPython.png")
 image_rect1 = image1.get_rect()
 
-image2 = pygame.image.load("pycharm.png")
+image2 = pygame.image.load("static/image/pycharm.png")
 image_rect2 = image2.get_rect()
 
 run=True
