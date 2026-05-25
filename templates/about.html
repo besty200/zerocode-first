@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}О нас{% endblock %}
+
+{% block header %}О нашем проекте{% endblock %}
+
+{% block content %}
+    <h2>О нас</h2>
+    <p>Этот учебный проект показывает, как работает наследование HTML-шаблонов во Flask.</p>
+    <p>Общий каркас страницы хранится в файле <strong>base.html</strong>, а отдельные страницы переопределяют нужные блоки.</p>
+
+<h1>Контакты</h1>
+<p>Email: example@mail.com</p>
+<p>Телефон: +7 (999) 123-45-67</p>
+      <div>
+        <a href="#">VK</a>
+        <a href="#">Telegram</a>
+        <a href="#">YouTube</a>
+      </div>
+
+{% endblock %}

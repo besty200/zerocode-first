@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block header %}Добро пожаловать!{% endblock %}
+
+{% block content %}
+    <h2>Главная страница</h2>
+    <p>Это главная страница сайта, созданная с помощью Flask и шаблонизатора Jinja.</p>
+    <p>Файл <strong>home.html</strong> расширяет базовый шаблон <strong>base.html</strong> и заполняет блоки своим содержимым.</p>
+<!-- Секция 2: Карточки -->
+    <section class="mb-5">
+      <h2 class="text-center mb-4">Наши услуги</h2>
+
+      <div class="row g-4">
+
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card h-100">
+            <img src="https://picsum.photos/id/1025/400/250" class="card-img-top" alt="">
+            <div class="card card-body">
+              <div class="card-body">
+                <h5 id="design" class="card-title">Дизайн</h5>
+                <p class="card-text">Создание современных и красивых интерфейсов для сайтов.</p>
+              </div>
+           </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card h-100">
+            <img src="https://picsum.photos/id/1040/400/250" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Разработка</h5>
+              <p class="card-text">Верстка и программирование сайтов любой сложности.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-12">
+          <div class="card h-100">
+            <img src="https://picsum.photos/id/1060/400/250" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Поддержка</h5>
+              <p class="card-text">Обновление, сопровождение и развитие проектов.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+{% endblock %}
